@@ -1,9 +1,10 @@
-﻿<Properties StartupItem="1337.Plugins.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerSetup.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs">
     <Files>
       <File FileName="Assets\Scripts\PlayerCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerSetup.cs" Line="1" Column="1" />
+      <File FileName="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
