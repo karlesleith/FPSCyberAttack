@@ -291,7 +291,7 @@ public class MapBuilder : MonoBehaviour
     // 
     public void GoToMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 
     // 
