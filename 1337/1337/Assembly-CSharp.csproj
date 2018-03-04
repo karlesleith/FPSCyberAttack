@@ -97,6 +97,7 @@
      <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\Scripts\mainMenu.cs" />
+     <Compile Include="Assets\Scripts\MapBuilder.cs" />
      <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerSetup.cs" />
