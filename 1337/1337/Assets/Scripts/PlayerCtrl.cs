@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
     public class PlayerCtrl : MonoBehaviour {
 
-
+    //Gloabal Vars
     public float speed;
     public float sensitivity;
     private float xMovement;

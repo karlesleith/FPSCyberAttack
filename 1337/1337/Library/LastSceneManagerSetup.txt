@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MapBuilder.unity
+- path: Assets/Scenes/GeneratedMaze.unity
   isLoaded: 1
   isActive: 1

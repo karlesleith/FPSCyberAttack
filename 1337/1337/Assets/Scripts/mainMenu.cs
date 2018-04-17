@@ -2,8 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class mainMenu : MonoBehaviour {
+
+    public GameObject t;
+    public int flickerTimer;
+
+
+
+    //Flicker Timer for the Title
+    void Flicker()
+    {
+        StartCoroutine(RemoveAfterSeconds(2, t));
+    }
+
+    IEnumerator RemoveAfterSeconds(int seconds, GameObject obj)
+    {
+      
+        yield return new WaitForSeconds(seconds);
+        obj.SetActive(false);
+    }
 
 
     public void PlayGame()
@@ -20,4 +39,6 @@ public class mainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(2);
     }
+
+    
 }

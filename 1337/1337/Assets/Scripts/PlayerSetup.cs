@@ -5,15 +5,17 @@ using UnityEngine.Networking;
 
 public class PlayerSetup : NetworkBehaviour {
 
+
+    //This Class is for every instance of the Player that is connected through the Unity Network Manager.
     [SerializeField] //Private but viewable in Unity
     Behaviour[] componentsToDisable;
-
+   
+    public GameObject gun;
     Camera sceneCam;
 
     void Start()
     {
-
-        // if The player is not the "Local Player" ignore the imputs for movement
+;       
         if (!isLocalPlayer)
         {
             for (int i = 0; i < componentsToDisable.Length; i++)

@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class ShootingCtrl : MonoBehaviour {
 
+
+    //Ctrl used for Shooting the  Blasts
     public WeaponsCtrl weapon;
+    public GameObject spawnPoint;
+
+    private bool isShooting; 
 
     public Camera cam;
 
@@ -17,12 +22,31 @@ public class ShootingCtrl : MonoBehaviour {
         //Raycasting for when a weapon is firing from a gun 
         Debug.Log("Fire() Method has been entered");
         RaycastHit hit;
-
-        if(Physics.Raycast(cam.transform.position,cam.transform.forward,out hit, weapon.weaponRange, mask))
+        GameObject bullet = Instantiate(Resources.Load("blast", typeof(GameObject))) as GameObject;
+        bullet.transform.localScale = new Vector3(1f, 1f, 1f);
+        BulletCtrl bc = bullet.GetComponent<BulletCtrl>();
+        var boltSound = bullet.GetComponent<AudioSource>();
+        boltSound.Play();
+        // Debug.Log("Debug: Bullet Spawned");
+        //Get the bullet's rigid body component and set its position and rotation equal to that of the spawnPoint
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        bullet.transform.rotation = spawnPoint.transform.rotation;
+        bullet.transform.position = spawnPoint.transform.position;
+        
+        //add force to the bullet in the direction of the spawnPoint's forward vector
+        rb.AddForce(spawnPoint.transform.forward * 5000f);
+        //destroy the bullet after 1 second
+        Destroy(bullet, 3);
+       
+        if (Physics.Raycast(cam.transform.position,cam.transform.forward,out hit, weapon.weaponRange, mask))
         {
             Debug.Log(hit.collider.name + "Has Been Shot!");
+
         }
+
     }
+
+
 
     // Use this for initialization
     void Start () {
