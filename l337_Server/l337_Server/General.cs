@@ -6,21 +6,28 @@ using System.Threading.Tasks;
 
 namespace l337_Server
 {
+
+    //General Setup
     class General
     {
-        public void InitServer()
+
+        public void SetUpServer()
         {
             Globals.mysql.MySQLInit();
-            InitGameData();
+            SetUpGameData();
             Globals.network.InitTCP();
+            //Testing
+            //Globals.database.PasswordMatch(1,"Unity","Unity");
         }
 
-        public void InitGameData()
+        public void SetUpGameData()
         {
             for (int i = 1; i < Constants.MAX_PLAYERS; i++)
             {
                 Globals.Clients[i] = new Client();
             }
         }
+
+    
     }
 }

@@ -9,3 +9,14 @@ c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.csproj
 c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.exe
 c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.pdb
 C:\Users\karle\source\repos\l337_Server\l337_Server\bin\Debug\FLI.dll
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\bin\Debug\l337_Server.exe.config
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\bin\Debug\l337_Server.exe
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\bin\Debug\l337_Server.pdb
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\bin\Debug\FLI.dll
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\l337_Server.csprojResolveAssemblyReference.cache
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\Interop.ADODB.dll
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\l337_Server.csproj.ResolveComReference.cache
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\l337_Server.csproj.CoreCompileInputs.cache
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\l337_Server.csproj.CopyComplete
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\l337_Server.exe
+C:\Users\karle\Desktop\FPSCyberAttack\l337_Server\l337_Server\obj\Debug\l337_Server.pdb

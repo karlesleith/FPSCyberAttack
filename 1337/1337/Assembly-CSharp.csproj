@@ -277,6 +277,9 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="FLI">
+ <HintPath>C:/Users/karle/Desktop/FPSCyberAttack/1337/1337/Assets/Scripts/FLI.dll</HintPath>
+ </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
  <HintPath>C:/Users/karle/Desktop/FPSCyberAttack/1337/1337/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
  </Reference>
@@ -303,9 +306,6 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/karle/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="FLI">
- <HintPath>C:/Users/karle/Desktop/FPSCyberAttack/1337/1337/Assets/Scripts/FLI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

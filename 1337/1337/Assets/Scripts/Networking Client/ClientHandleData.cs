@@ -13,21 +13,31 @@ public class ClientHandleData : MonoBehaviour
     }
 
 
-    
+
+    //Test Switch Statment
     void HandleMessages(int packetNum, byte[] data)
     {
         switch (packetNum)
         {
             case 1:
-                HandleJoinGame(packetNum,data);
+                HandleReturnedMessage(packetNum, data);
                 break;
             case 2:
-                HandleInstantiatePlayer(packetNum, data);
-                break;
-            case 3:
-                HandleGetOtherPlayer(packetNum, data);
                 break;
         }
+    }
+
+
+    void HandleReturnedMessage(int packetNum, byte[] data)
+    {
+        //Send  the Message for the Sever back to the Unity Console 
+        int packetnum;
+        FLI.ByteBuffer buffer = new FLI.ByteBuffer();
+        buffer.WriteBytes(data);
+        packetnum = buffer.ReadInt();
+        String mes = buffer.ReadString();
+        //Send to Unity console for now
+        Debug.Log(mes);
     }
 
     public void HandleData(byte[] data)
@@ -43,45 +53,5 @@ public class ClientHandleData : MonoBehaviour
         HandleMessages(packetnum, data);
     }
 
-    void HandleJoinGame(int packetNum,byte[]data)
-    {
-        int packetnum;
-        FLI.ByteBuffer buffer = new FLI.ByteBuffer();
-        buffer.WriteBytes(data);
-        packetnum = buffer.ReadInt();
-        int MyIndex = buffer.ReadInt();
-
-        Console.WriteLine(MyIndex);
-        Globals.instance.MyIndex = MyIndex;
-        Network.instance.playerPref = Instantiate(Network.instance.playerPref, Network.instance.spawnPoint);
-        Network.instance.playerPref.name = "Player: " + MyIndex.ToString();
-        Network.instance.playerPref.GetComponent<NetPlayer>().Index = MyIndex;
-    }
-
-    //Player Setup
-    public void HandleInstantiatePlayer(int packetNum,byte[]data)
-    {
-        int packetnum;
-        FLI.ByteBuffer buffer = new FLI.ByteBuffer();
-        buffer.WriteBytes(data);
-        packetnum = buffer.ReadInt();
-
-        int PlayerIndex = buffer.ReadInt();
-        Network.instance.playerPref = Instantiate(Network.instance.playerPref, Network.instance.spawnPoint);
-        Network.instance.playerPref.name = "Player: " + PlayerIndex.ToString();
-        Network.instance.playerPref.GetComponent<NetPlayer>().Index = PlayerIndex;
-    }
-
-    //Handling connection to other players
-    public void HandleGetOtherPlayer(int packetNum,byte[]data)
-    {
-        int packetnum;
-        FLI.ByteBuffer buffer = new FLI.ByteBuffer(); ;
-        buffer.WriteBytes(data);
-        packetnum = buffer.ReadInt();
-        int PlayerIndex = buffer.ReadInt();
-        Network.instance.playerPref = Instantiate(Network.instance.playerPref, Network.instance.spawnPoint);
-        Network.instance.playerPref.name = "Player: " + PlayerIndex.ToString();
-        Network.instance.playerPref.GetComponent<NetPlayer>().Index = PlayerIndex;
-    }
+  
 }

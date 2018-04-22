@@ -18,6 +18,17 @@ namespace l337_Server
         }
 
 
+        public void SendAlertMessage(int indext, string mes)
+        {
+            FLI.ByteBuffer buffer = new FLI.ByteBuffer();
+            //Set our package to 1
+            buffer.WriteInt(1);
+            buffer.WriteString(mes);
+
+            SendDataTo(indext, buffer.toArray());
+
+        }
+
         //Send data to all clients
         public async void SendDataToAll(byte[] data)
         {

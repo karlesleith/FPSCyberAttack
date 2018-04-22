@@ -11,6 +11,9 @@ public class ClientSendData : MonoBehaviour
     public Text username;
     public Text password;
 
+    public Text userLogin;
+    public Text passLogin;
+
     // Use this for initialization
     void Awake()
     {
@@ -36,6 +39,21 @@ public class ClientSendData : MonoBehaviour
         buffer.WriteInt(1);
         buffer.WriteString(username.text);
         buffer.WriteString(password.text);
+
+        SendDataToServer(buffer.toArray());
+        buffer = null;
+
+    }
+
+    //On click send to server 
+    //Sending Login Data to the Databse
+    public void SendLogin()
+    {
+        FLI.ByteBuffer buffer = new FLI.ByteBuffer();
+        //Changed to second packet
+        buffer.WriteInt(2);
+        buffer.WriteString(userLogin.text);
+        buffer.WriteString(passLogin.text);
 
         SendDataToServer(buffer.toArray());
         buffer = null;

@@ -22,7 +22,7 @@ namespace l337_Server
             threadConsole.Start();
 
             Globals.networkHandleData.SetUpMessages();
-            Globals.general.InitServer();
+            Globals.general.SetUpServer();
         }
 
         private static void ConsoleThread()
