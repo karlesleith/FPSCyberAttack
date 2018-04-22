@@ -100,12 +100,17 @@
      <Compile Include="Assets\Scripts\enemyCtrl.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\GameOverTrigger.cs" />
+     <Compile Include="Assets\Scripts\Globals.cs" />
      <Compile Include="Assets\Scripts\HuntAndKillMazeAlgorithm.cs" />
      <Compile Include="Assets\Scripts\mainMenu.cs" />
      <Compile Include="Assets\Scripts\MapBuilder.cs" />
      <Compile Include="Assets\Scripts\MazeCell.cs" />
      <Compile Include="Assets\Scripts\MazeGen.cs" />
      <Compile Include="Assets\Scripts\MazeLoader.cs" />
+     <Compile Include="Assets\Scripts\Networking Client\ClientHandleData.cs" />
+     <Compile Include="Assets\Scripts\Networking Client\ClientSendData.cs" />
+     <Compile Include="Assets\Scripts\Networking Client\NetPlayer.cs" />
+     <Compile Include="Assets\Scripts\Networking Client\Network.cs" />
      <Compile Include="Assets\Scripts\NumGen.cs" />
      <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -298,6 +303,9 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/karle/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="FLI">
+ <HintPath>C:/Users/karle/Desktop/FPSCyberAttack/1337/1337/Assets/Scripts/FLI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

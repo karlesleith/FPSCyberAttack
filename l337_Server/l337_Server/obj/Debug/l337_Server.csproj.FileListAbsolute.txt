@@ -1,0 +1,11 @@
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.csprojResolveAssemblyReference.cache
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\Interop.ADODB.dll
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.csproj.ResolveComReference.cache
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.csproj.CoreCompileInputs.cache
+c:\users\karle\source\repos\l337_Server\l337_Server\bin\Debug\l337_Server.exe.config
+c:\users\karle\source\repos\l337_Server\l337_Server\bin\Debug\l337_Server.exe
+c:\users\karle\source\repos\l337_Server\l337_Server\bin\Debug\l337_Server.pdb
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.csproj.CopyComplete
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.exe
+c:\users\karle\source\repos\l337_Server\l337_Server\obj\Debug\l337_Server.pdb
+C:\Users\karle\source\repos\l337_Server\l337_Server\bin\Debug\FLI.dll
