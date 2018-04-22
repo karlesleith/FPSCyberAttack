@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scripts\GameOverTrigger.cs" />
      <Compile Include="Assets\Scripts\Globals.cs" />
      <Compile Include="Assets\Scripts\HuntAndKillMazeAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\LoginCtrl.cs" />
      <Compile Include="Assets\Scripts\mainMenu.cs" />
      <Compile Include="Assets\Scripts\MapBuilder.cs" />
      <Compile Include="Assets\Scripts\MazeCell.cs" />

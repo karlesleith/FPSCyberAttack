@@ -7,12 +7,12 @@ public class ClientHandleData : MonoBehaviour
 
     public static ClientHandleData instance;
 
+    public Text alert;
+
     private void Awake()
     {
         instance = this;
     }
-
-
 
     //Test Switch Statment
     void HandleMessages(int packetNum, byte[] data)
@@ -38,6 +38,7 @@ public class ClientHandleData : MonoBehaviour
         String mes = buffer.ReadString();
         //Send to Unity console for now
         Debug.Log(mes);
+        alert.text = mes;
     }
 
     public void HandleData(byte[] data)

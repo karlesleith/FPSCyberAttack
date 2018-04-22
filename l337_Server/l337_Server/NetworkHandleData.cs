@@ -58,7 +58,7 @@ namespace l337_Server
             Console.WriteLine("Debug Password: " + password);
 
             ///
-            Globals.database.AddAcc(username,password);
+            Globals.database.AddAcc(index,username,password);
 
         }
 
