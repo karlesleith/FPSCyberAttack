@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
 
 public class ClientHandleData : MonoBehaviour
 {
@@ -39,6 +40,20 @@ public class ClientHandleData : MonoBehaviour
         //Send to Unity console for now
         Debug.Log(mes);
         alert.text = mes;
+
+        Debug.Log("Loading...");
+        Thread.Sleep(1);
+
+
+
+        LoginCtrl lc = new LoginCtrl();
+
+        if(mes == "Access Granted!")
+        {
+           
+            lc.loadMainMenu();
+        }
+
     }
 
     public void HandleData(byte[] data)
