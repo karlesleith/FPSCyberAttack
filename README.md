@@ -5,7 +5,7 @@ First Person Multiplayer Shooter Designed in Unity as Final Year Project in Hono
 With the releases of the new “b33lz3bub” virus, millions of computers across the world have been taken hostage, with the intent of extorting their users, 
 but one script kiddy had discovered that that its possible to erase the virus, but must transfer his consciousness to infected computers to do so.
 
-[![Screencast](https://github.com/karlesleith/CrossbowVR/blob/master/ReadMeImages/YoutubeDemoImage.png)](https://www.youtube.com/watch?v=RuGs9rvlAo0)
+[![Screencast](https://github.com/karlesleith/FPSCyberAttack/blob/master/Screenshots/Screencast.PNG)](https://www.youtube.com/watch?v=RuGs9rvlAo0)
 
 ## How to Run
 Clone the repository to your Desktop, Access the build Folder, and run the latest Build of the Game.
@@ -26,6 +26,13 @@ This game is compatible with Windows Desktop devices and intended to be played w
 	
 ## Development
 During the process of development I learned how to develop a 3D Game in Unity. The sceneraio of a randomlly Generated Maze, database login and Networking has been built from scratch. I have created a low poly world and objects using a combination of Unity and Blender, All the scripts have been writen from scratch to achieve the feel I wanted, (Eg. Locking the camera rotation on the Y - Axis), I am leaving this game open for futher development as I want to have a release on Itch.io, and further senarios can be implemented with a more complex architechure. I also belive with some effort, this game will able to be ported to Mobile and WebGL. 
+
+### Software Architecture
+
+## Conclusion
+
+To ﬁnish up this project, Over the last 9 months I have created a Multiplayer FPS(First Person Shooter), with a procedually generated world, and functionality to connect to a MySQL Server. I have learned alot about Maze building algorithms and the Unity Engine and its limitations. It was my intention to make a game that I would have enjoyed growing up based on my interests as a child, but also balance being able to show my skills in programming, Algorithmic eﬃciency and Object Orientation, and I believe that I have achieve that. 
+
 
 ## Built with 
 	Unity 5.6
