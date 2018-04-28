@@ -22,7 +22,8 @@ This game is compatible with Windows Desktop devices and intended to be played w
 	Mouse = Move Cursor,
 	Left Mouse Button = Fire
 	
-
+## Development
+During the process of development I learned how to develop a 3D Game in Unity. The sceneraio of a randomlly Generated Maze, database login and Networking has been built from scratch. I have created a low poly world and objects using a combination of Unity and Blender, All the scripts have been writen from scratch to achieve the feel I wanted, (Eg. Locking the camera rotation on the Y - Axis), I am leaving this game open for futher development as I want to have a release on Itch.io, and further senarios can be implemented with a more complex architechure. I also belive with some effort, this game will able to be ported to Mobile and WebGL. 
 
 ## Built with 
 	Unity 5.6
