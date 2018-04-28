@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Login.unity
+- path: Assets/Scenes/TestMaze.unity
   isLoaded: 1
   isActive: 1

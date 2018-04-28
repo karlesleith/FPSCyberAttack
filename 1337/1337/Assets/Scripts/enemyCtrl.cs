@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Random;
 
 public class enemyCtrl : MonoBehaviour
 {
+
+    private int movespeed = 5;
 
     //for this to work both need colliders, one must have rigid body, and the enemy must have is trigger checked.
     void OnTriggerEnter(Collider col)
@@ -21,5 +24,23 @@ public class enemyCtrl : MonoBehaviour
 
 
         }
+
+        if (col.gameObject.name.Contains("Cube"))
+        {
+            
+            //  transform.Rotate(Vector3);
+            Debug.Log("Ran into Wall");
+            transform.Rotate(0,90,0);
+        }
+
     }
+
+   
+
+    public void Update()
+    {
+        transform.Translate(Vector3.forward * movespeed * Time.deltaTime);
+
+    }
+
 }
