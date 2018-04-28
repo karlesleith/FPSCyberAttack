@@ -29,6 +29,21 @@ During the process of development I learned how to develop a 3D Game in Unity. T
 
 ### Software Architecture
 
+![arch](https://github.com/karlesleith/FPSCyberAttack/blob/master/Screenshots/Architecture.png)
+
+There are three main components to 1337 :
+* Game Engine 
+	* Scenes 
+	* Scripts
+	* Maze Generation ect.
+* MySQL Database 
+	* User Login
+	* Score Manager
+* Network Manager
+	* FourLeafInteractive.dll
+	* UnityNetwork Manager
+
+
 ## Conclusion
 
 To ﬁnish up this project, Over the last 9 months I have created a Multiplayer FPS(First Person Shooter), with a procedually generated world, and functionality to connect to a MySQL Server. I have learned alot about Maze building algorithms and the Unity Engine and its limitations. It was my intention to make a game that I would have enjoyed growing up based on my interests as a child, but also balance being able to show my skills in programming, Algorithmic eﬃciency and Object Orientation, and I believe that I have achieve that. 
@@ -42,5 +57,9 @@ Although we are happy with how we developed the game,there is still room to impr
 	Unity 5.6
 	Blender
 	MySQL.
+	
+##  References 
+* [PostProcessing Stack](https://assetstore.unity.com/packages/essentials/post-processing-stack-83912)
+* Texts : [TextMesh Pro](https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126)
 	
 
