@@ -58,4 +58,8 @@ Although we are happy with how we developed the game,there is still room to impr
 	Blender
 	MySQL.
 	
+##  References 
+* [PostProcessing Stack](https://assetstore.unity.com/packages/essentials/post-processing-stack-83912)
+* Texts : [TextMesh Pro](https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126)
+	
 
