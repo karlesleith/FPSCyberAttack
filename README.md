@@ -31,6 +31,18 @@ During the process of development I learned how to develop a 3D Game in Unity. T
 
 ![arch](https://github.com/karlesleith/FPSCyberAttack/blob/master/Screenshots/Architecture.png)
 
+There are three main components to 1337 :
+* Game Engine 
+	* Scenes 
+	* Scripts
+	* Maze Generation ect.
+* MySQL Database 
+	* User Login
+	* Score Manager
+* Network Manager
+	* FourLeafInteractive.dll
+	* UnityNetwork Manager
+
 
 ## Conclusion
 
