@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Random;
-
 public class enemyCtrl : MonoBehaviour
 {
 
-    private int movespeed = 5;
+    private int movespeed = 2;
 
     //for this to work both need colliders, one must have rigid body, and the enemy must have is trigger checked.
     void OnTriggerEnter(Collider col)
@@ -25,7 +23,7 @@ public class enemyCtrl : MonoBehaviour
 
         }
 
-        if (col.gameObject.name.Contains("Cube"))
+        if (col.gameObject.name.Contains("Wall"))
         {
             
             //  transform.Rotate(Vector3);

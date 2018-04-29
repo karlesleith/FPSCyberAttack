@@ -1,0 +1,6 @@
+C:\Users\karle\source\repos\BB\BB\obj\Debug\BB.csprojResolveAssemblyReference.cache
+C:\Users\karle\source\repos\BB\BB\obj\Debug\BB.csproj.CoreCompileInputs.cache
+C:\Users\karle\source\repos\BB\BB\bin\Debug\FLI.dll
+C:\Users\karle\source\repos\BB\BB\bin\Debug\FLI.pdb
+C:\Users\karle\source\repos\BB\BB\obj\Debug\FLI.dll
+C:\Users\karle\source\repos\BB\BB\obj\Debug\FLI.pdb
