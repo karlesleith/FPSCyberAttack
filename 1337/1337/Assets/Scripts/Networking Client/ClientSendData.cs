@@ -14,6 +14,9 @@ public class ClientSendData : MonoBehaviour
     public Text userLogin;
     public Text passLogin;
 
+    private static string holdUsername;
+    
+
     // Use this for initialization
     void Awake()
     {
@@ -54,9 +57,27 @@ public class ClientSendData : MonoBehaviour
         buffer.WriteInt(2);
         buffer.WriteString(userLogin.text);
         buffer.WriteString(passLogin.text);
-
         SendDataToServer(buffer.toArray());
+
+        setUsername(userLogin.text);
+
         buffer = null;
+
+    }
+
+
+    public string getUsername()
+    {
+
+      Debug.Log("Getting Username: " + holdUsername);
+      return  holdUsername;
+    }
+
+    public void setUsername(string ul)
+    {
+        Debug.Log("Setting Username: " + ul);
+        holdUsername = ul;
+        Debug.Log("Setting Username2: " + holdUsername);
 
     }
 

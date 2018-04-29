@@ -99,6 +99,7 @@
      <Compile Include="Assets\Scripts\BulletCtrl.cs" />
      <Compile Include="Assets\Scripts\enemyCtrl.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\GameLoop.cs" />
      <Compile Include="Assets\Scripts\GameOverTrigger.cs" />
      <Compile Include="Assets\Scripts\Globals.cs" />
      <Compile Include="Assets\Scripts\HuntAndKillMazeAlgorithm.cs" />

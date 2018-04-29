@@ -8,6 +8,21 @@ public class mainMenu : MonoBehaviour {
 
     public GameObject t;
     public int flickerTimer;
+    public Text username;
+    ClientSendData csd = new ClientSendData();
+
+    void Start()
+    {
+
+        if(csd.getUsername() != null)
+        username.text = "User: "+csd.getUsername();
+    }
+
+    //Setting instance Username
+    public void UsernameSet(string un)
+    {
+        username.text = un;
+    } 
 
 
 

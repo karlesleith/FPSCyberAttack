@@ -14,6 +14,7 @@ using UnityEngine;
     private float yRot;
     private float xRot;
 
+    public GameObject minmap;
 
     Vector3 moveHorizontal;
     Vector3 moveVertical;
@@ -26,7 +27,8 @@ using UnityEngine;
     void Start()
     {
         motor = GetComponent<PlayerMovement>();
-    }
+  
+}
 
     private void Update()
     {
@@ -44,8 +46,36 @@ using UnityEngine;
         yRot = Input.GetAxisRaw("Mouse X");
         xRot = Input.GetAxisRaw("Mouse Y");
 
-        rotation = new Vector3(0f, yRot ,0f) * sensitivity;
+      //  if (Input.GetKeyDown(KeyCode.M))
+        //    toggleMinimap();
+
+            rotation = new Vector3(0f, yRot ,0f) * sensitivity;
 
         motor.Rotate(rotation);
+    }
+
+    /*
+    //toggle minimap
+    void toggleMinimap()
+    {
+        Debug.Log("M");
+       
+     
+      if(minmap.activeSelf == true)
+        {
+            minmap.SetActive(false);
+        }
+
+      else 
+        {
+            minmap.SetActive(true);
+        }
+    }
+    */
+
+
+    public void setSpeed(int s)
+    {
+        speed = s;
     }
 }

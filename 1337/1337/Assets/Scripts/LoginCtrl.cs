@@ -8,6 +8,8 @@ public class LoginCtrl : MonoBehaviour {
     private string userName;
     private string password;
 
+   
+
     ClientHandleData chd = new ClientHandleData();
 
     private void logIn()
@@ -20,6 +22,8 @@ public class LoginCtrl : MonoBehaviour {
     public void loadMainMenu()
     {
         SceneManager.LoadScene(1);
+       
+        
        
     }
 

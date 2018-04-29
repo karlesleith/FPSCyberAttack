@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class GameOverTrigger : MonoBehaviour {
 
     public GameObject deathScreen;
+
 
     //for this to work both need colliders, one must have rigid body, and the enemy must have is trigger checked.
     void OnTriggerEnter(Collider col)
@@ -20,23 +22,30 @@ public class GameOverTrigger : MonoBehaviour {
 
             Debug.Log("Killed:" + this.gameObject.name);
             Destroy(gameObject);
-
+            FindObjectOfType<PlayerCtrl>().gameObject.SetActive(false);
+            FindObjectOfType<ShootingCtrl>().gameObject.SetActive(false);
             deathScreen.SetActive(true);
+            Debug.Log("DeathScreen Active");
+
+           // SceneManager.LoadScene(1);
+            
         }
 
     }
 
 
+ 
+
     public void restart()
     {
-
-        SceneManager.LoadScene(Application.loadedLevel);
+        Debug.Log("RESTARTING");
+        SceneManager.LoadScene(1);
 
     }
 
     public void quit()
     {
-
+        Debug.Log("RESTARTING");
         Application.Quit();
 
     }
