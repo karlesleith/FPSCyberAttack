@@ -26,6 +26,7 @@ b1307bf1e0b6481c2bd1d288944a367e Assembly-CSharp.dll:.NetPlayer
 6e6f0912d4d6f2bf4bd5efcab30d76e8 Assembly-CSharp.dll:.MazeLoader
 8e3c7c5b5aa06a2ba0c24b619edcea96 Assembly-CSharp.dll:.PlayerCtrl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.EventSystemChecker
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameLoop
 1b136a5c0eebc1431db5b5ad7c01a04a Assembly-CSharp.dll:.EnemySpawner
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -275,4 +276,3 @@ af7666733efcc974926d7d470e1732a6 Assembly-CSharp.dll:TMPro.Examples.SkewTextExam
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameLoop
