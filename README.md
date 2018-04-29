@@ -10,6 +10,8 @@ but one script kiddy had discovered that that its possible to erase the virus, b
 ## How to Run
 Clone the repository to your Desktop, Access the build Folder, and run the latest Build of the Game.
 
+**Note: To run the Game on Local Host, have MySQL running on the local host on port 3306**
+
 ## Set Up
 Requires : MySQL, Unity
 
